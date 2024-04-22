@@ -1,0 +1,90 @@
+{
+    "products": [
+        {
+            "name": "deploy-arch-ibm-cos-config",
+            "label": "COS bucket configuration (sample DA)",
+            "product_kind": "solution",
+            "tags": [
+                "ibm_created",
+                "target_terraform",
+                "terraform",
+                "solution",
+                "storage"
+            ],
+            "keywords": [
+                "COS",
+                "bucket",
+                "replication",
+                "object storage",
+                "IaC",
+                "infrastructure as code",
+                "terraform",
+                "solution"
+            ],
+            "short_description": "Creates and configures replication between two regional Object Storage buckets",
+            "long_description": "This sample deployable architecture supports creating an Object Storage instance, a source bucket, a target bucket and a replication rule to replicate all data.",
+            "offering_docs_url": "https://github.com/terraform-ibm-modules/sample-deployable-architectures/blob/main/README.md",
+            "offering_icon_url": "https://raw.githubusercontent.com/terraform-ibm-modules/terraform-ibm-cos/main/images/cos_icon.svg",
+            "provider_name": "IBM",
+            "features": [
+                {
+                    "title": "Creates and configures Cloud Object Storage buckets",
+                    "description": "Yes"
+                }
+            ],
+            "flavors": [
+                {
+                    "label": "Regional bucket replication",
+                    "name": "replication",
+                    "install_type": "fullstack",
+                    "working_directory": "solutions/tf-fullstack-da",
+                    "compliance": {
+                    },
+                    "iam_permissions": [
+                        {
+                            "role_crns": [
+                              "crn:v1:bluemix:public:iam::::serviceRole:Manager"
+                            ],
+                            "service_name": "cloud-object-storage"
+                        }
+                    ],
+                    "architecture": {
+                        "descriptions": "This architecture supports creating and configuring 2 Object Storage buckets with replication.",
+                        "features": [
+                            {
+                                "title": "Optionally creates a resource group",
+                                "description": "Yes"
+                            },
+                            {
+                                "title": "Creates an Object Storage instance",
+                                "description": "Yes"
+                            },
+                            {
+                                "title": "Creates a source Object Storage bucket",
+                                "description": "Yes"
+                            },
+                            {
+                                "title": "Creates a target Object Storage bucket",
+                                "description": "Yes"
+                            },
+                            {
+                                "title": "Configures a replication rule between buckets",
+                                "description": "Yes"
+                            }
+                        ],
+                        "diagrams": [
+                            {
+                                "diagram": {
+                                    "caption": "COS bucket configuration (sample DA)",
+                                    "url": "<PLACEHOLDER>",
+                                    "type": "image/svg+xml"
+                                },
+                                "description": "This architecture supports creating and configuring Object Storage bucket replication."
+                            }
+                        ]
+                    }
+                }
+            ]
+        }
+    ]
+}

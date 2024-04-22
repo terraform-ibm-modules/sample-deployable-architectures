@@ -1,14 +1,7 @@
 ########################################################################################################################
-# Input variables
+# Provider config
 ########################################################################################################################
 
-variable "ibmcloud_api_key" {
-  type        = string
-  description = "The IBM Cloud API Key"
-  sensitive   = true
-}
-
-variable "region" {
-  type        = string
-  description = "The IBM Cloud region"
+provider "ibm" {
+  ibmcloud_api_key = var.ibmcloud_api_key
 }
