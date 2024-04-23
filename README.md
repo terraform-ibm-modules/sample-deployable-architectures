@@ -16,7 +16,7 @@ This repository contains the following sample deployable architectures:
 The repository is also configured with the following things:
 - [A Github actions common CI pipeline for terraform](./.github/workflows) (more info on the pipeline [here](https://github.com/terraform-ibm-modules/common-pipeline-assets/blob/main/README.md)).
 - A [common-dev-assets](./common-dev-assets) git submodule which contains common automation used for CI and development (for more info see [Local development setup](https://terraform-ibm-modules.github.io/documentation/#/local-dev-setup))
-- An [ibm_catalog.json](ibm_catalog.json) file which is used for onboarding the sample deployable architectures to the IBM catalog.
+- An [ibm_catalog.json](ibm_catalog.json) file which is used for onboarding the sample deployable architectures to the IBM Cloud catalog.
 - A [.catalog-onboard-pipeline.yaml](.catalog-onboard-pipeline.yaml) file which is used by an IBM internal pipeline to onboard deployable architectures to the IBM catalog.
 - A [renovate.json](renovate.json) file which allows dependency update pull requests to be auto created by the renovate pipeline that runs periodically against all repos in the [terraform-ibm-modules](https://github.com/terraform-ibm-modules) org.
 
