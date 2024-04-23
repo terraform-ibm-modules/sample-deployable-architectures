@@ -7,9 +7,9 @@
 [![semantic-release](https://img.shields.io/badge/%20%20%F0%9F%93%A6%F0%9F%9A%80-semantic--release-e10079.svg)](https://github.com/semantic-release/semantic-release)
 
 This repository contains the following sample deployable architectures:
-- [Terraform based fullstack sample DA - COS bucket replication](./solutions/tf-fullstack-da)
-- [Terraform based extension sample DA](./solutions/tf-extension-da) [coming soon]
-- [IBM Cloud Projects Stack sample DA](./solutions/projects-stack-da) [coming soon]
+- [Terraform-based fullstack sample deployable architecture - COS bucket replication](./solutions/tf-fullstack-da)
+- [Terraform-based extension sample deployable architecture](./solutions/tf-extension-da) [coming soon]
+- [IBM Cloud Projects Stack sample deployable architecture](./solutions/projects-stack-da) [coming soon]
 
 :exclamation: These solutions are not intended to be called by one or more other modules since they contain a provider configurations, meaning they are not compatible with the `for_each`, `count`, and `depends_on` arguments. For more information see [Providers Within Modules](https://developer.hashicorp.com/terraform/language/modules/develop/providers)
 
