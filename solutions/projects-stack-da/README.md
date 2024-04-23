@@ -1,1 +1,1 @@
-# Sample IBM Projects stack
+# Sample deployable architecture stack

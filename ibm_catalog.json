@@ -2,7 +2,7 @@
     "products": [
         {
             "name": "deploy-arch-ibm-cos-config",
-            "label": "COS bucket configuration (sample DA)",
+            "label": "Object Storage bucket configuration",
             "product_kind": "solution",
             "tags": [
                 "ibm_created",
