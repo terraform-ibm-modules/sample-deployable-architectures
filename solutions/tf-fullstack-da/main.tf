@@ -15,11 +15,11 @@ module "resource_group" {
 
 # create global COS instance
 module "cos_instance" {
-  source                     = "terraform-ibm-modules/cos/ibm"
-  version                   = "8.1.10"
-  resource_group_id         = module.resource_group.resource_group_id
-  cos_instance_name         = var.prefix != null ? "${var.prefix}-${var.cos_instance_name}" : var.cos_instance_name
-  create_cos_bucket         = false
+  source            = "terraform-ibm-modules/cos/ibm"
+  version           = "8.1.10"
+  resource_group_id = module.resource_group.resource_group_id
+  cos_instance_name = var.prefix != null ? "${var.prefix}-${var.cos_instance_name}" : var.cos_instance_name
+  create_cos_bucket = false
 }
 
 # create a source and target COS bucket
@@ -38,7 +38,7 @@ module "cos_buckets" {
       region_location        = var.cos_source_bucket_region
       resource_instance_id   = module.cos_instance.cos_instance_id
       add_bucket_name_suffix = var.add_bucket_name_suffix
-      object_versioning      = { enable = true}
+      object_versioning      = { enable = true }
     },
     {
       bucket_name            = local.cos_target_bucket_name
@@ -46,7 +46,7 @@ module "cos_buckets" {
       region_location        = var.cos_target_bucket_region
       resource_instance_id   = module.cos_instance.cos_instance_id
       add_bucket_name_suffix = var.add_bucket_name_suffix
-      object_versioning      = { enable = true}
+      object_versioning      = { enable = true }
     }
   ]
 }

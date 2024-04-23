@@ -8,9 +8,9 @@ This architecture supports provisioning the following resources:
 - A replication rule to replicate everything from the source bucket to the target bucket
 - An IAM authorization policy required for the replication between the buckets
 
-![observability-instances-deployable-architecture](../../reference-architecture/deployable-architecture-observability-instances.svg)
+![cos-replication](../../reference-architectures/cos-replication.svg)
 
-**NB:** This solution is not intended to be called by one or more other modules since it contains a provider configurations, meaning it is not compatible with the `for_each`, `count`, and `depends_on` arguments. For more information see [Providers Within Modules](https://developer.hashicorp.com/terraform/language/modules/develop/providers)
+:exclamation: This solution is not intended to be called by one or more other modules since they contain provider configurations, meaning they are not compatible with the `for_each`, `count`, and `depends_on` arguments. For more information see [Providers Within Modules](https://developer.hashicorp.com/terraform/language/modules/develop/providers)
 
 <!-- Below content is automatically populated via pre-commit hook -->
 <!-- BEGINNING OF PRE-COMMIT-TERRAFORM DOCS HOOK -->

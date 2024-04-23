@@ -75,8 +75,8 @@
                         "diagrams": [
                             {
                                 "diagram": {
-                                    "caption": "COS bucket configuration (sample DA)",
-                                    "url": "<PLACEHOLDER>",
+                                    "caption": "Object Storage buckets with replication",
+                                    "url": "https://raw.githubusercontent.com/terraform-ibm-modules/sample-deployable-architectures/main/reference-architecture/cos-replication.svg",
                                     "type": "image/svg+xml"
                                 },
                                 "description": "This architecture supports creating and configuring Object Storage bucket replication."
