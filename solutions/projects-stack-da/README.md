@@ -1,1 +1,0 @@
-# Sample deployable architecture stack

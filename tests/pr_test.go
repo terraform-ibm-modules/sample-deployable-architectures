@@ -14,7 +14,7 @@ import (
 const resourceGroup = "geretain-test-resources"
 const tfFullstackDADir = "solutions/tf-fullstack-da"
 
-/********************************************** 
+/**********************************************
 * TESTS FOR THE TERRAFORM BASED FULLSTACK DA  *
 **********************************************/
 func TestRunTfFullstackDASchematics(t *testing.T) {
@@ -67,13 +67,13 @@ func TestRunTfFullstackDAUpgrade(t *testing.T) {
 	}
 }
 
-/********************************************** 
+/**********************************************
 * TESTS FOR THE TERRAFORM BASED EXTENSION DA  *
 **********************************************/
 
 // TODO: Add tests
 
-/********************************************** 
+/**********************************************
 * TESTS FOR THE PROJECTS STACK DA             *
 **********************************************/
 
