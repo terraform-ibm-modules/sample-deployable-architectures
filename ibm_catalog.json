@@ -83,7 +83,46 @@
                             }
                         ]
                     }
-                }
+                },
+                {
+                    "label": "Static website configurator",
+                    "name": "static-website-configurator",
+                    "install_type": "extension",
+                    "working_directory": "solutions/tf-extension-da",
+                    "dependencies": [
+                     {
+                        "flavors": [
+                         "replication"
+                        ],
+                        "id": "TBC",
+                        "name": "deploy-arch-ibm-cos-config",
+                        "version": ">=v1.0.0"
+                     }
+                    ],
+                    "architecture": {
+                        "descriptions": "This architecture supports extending an existing Object Storage bucket with the configuration required to host a static website.",
+                        "features": [
+                          {
+                            "title": "Enable public access for the provided Object storage bucket.",
+                            "description": "Yes"
+                          },
+                          {
+                            "title": "Adds the website configuration to host a static website.",
+                            "description": "Yes"
+                          }
+                        ],
+                        "diagrams": [
+                         {
+                          "diagram": {
+                            "caption": "Static website configurator",
+                            "url": "https://raw.githubusercontent.com/terraform-ibm-modules/sample-deployable-architectures/main/reference-architecture/cos-website.svg",
+                            "type": "image/svg+xml"
+                          },
+                          "description": "Configure the website to use your documents as an index for the site and to potentially display errors"
+                         }
+                        ]
+                    }
+                 }
             ]
         }
     ]
