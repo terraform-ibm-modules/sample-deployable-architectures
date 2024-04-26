@@ -14,9 +14,9 @@ import (
 const resourceGroup = "geretain-test-resources"
 const tfFullstackDADir = "solutions/tf-fullstack-da"
 
-/**********************************************
+/*******************************************************************
 * TESTS FOR THE TERRAFORM BASED FULLSTACK DEPLOYABLE ARCHITECTURE  *
-**********************************************/
+*******************************************************************/
 func TestRunTfFullstackDASchematics(t *testing.T) {
 	t.Parallel()
 
@@ -67,14 +67,8 @@ func TestRunTfFullstackDAUpgrade(t *testing.T) {
 	}
 }
 
-/**********************************************
+/*******************************************************************
 * TESTS FOR THE TERRAFORM BASED EXTENSION DEPLOYABLE ARCHITECTURE  *
-**********************************************/
-
-// TODO: Add tests
-
-/**********************************************
-* TESTS FOR THE PROJECTS STACK DEPLOYABLE ARCHITECTURE             *
-**********************************************/
+*******************************************************************/
 
 // TODO: Add tests
