@@ -68,13 +68,13 @@ func TestRunTfFullstackDAUpgrade(t *testing.T) {
 }
 
 /**********************************************
-* TESTS FOR THE TERRAFORM BASED EXTENSION DA  *
+* TESTS FOR THE TERRAFORM BASED EXTENSION DEPLOYABLE ARCHITECTURE  *
 **********************************************/
 
 // TODO: Add tests
 
 /**********************************************
-* TESTS FOR THE PROJECTS STACK DA             *
+* TESTS FOR THE PROJECTS STACK DEPLOYABLE ARCHITECTURE             *
 **********************************************/
 
 // TODO: Add tests
