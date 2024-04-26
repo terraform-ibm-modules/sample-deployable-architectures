@@ -1,4 +1,4 @@
-# The content of this file are used by an IBM internal pipeline to onboard solutions to the IBM catalog
+# The contents of this file are used by an IBM internal pipeline to onboard solutions to the IBM catalog
 ---
 apiVersion: v1
 offerings:
