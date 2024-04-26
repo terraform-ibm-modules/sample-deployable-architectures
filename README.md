@@ -1,4 +1,4 @@
-# Sample Deployable Architectures
+# Sample deployable architectures
 
 [![Incubating (Not yet consumable)](https://img.shields.io/badge/status-Incubating%20(Not%20yet%20consumable)-red)](https://terraform-ibm-modules.github.io/documentation/#/badge-status)
 [![latest release](https://img.shields.io/github/v/release/terraform-ibm-modules/sample-deployable-architectures?logo=GitHub&sort=semver)](https://github.com/terraform-ibm-modules/sample-deployable-architectures/releases/latest)
