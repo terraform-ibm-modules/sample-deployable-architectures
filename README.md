@@ -7,8 +7,8 @@
 [![semantic-release](https://img.shields.io/badge/%20%20%F0%9F%93%A6%F0%9F%9A%80-semantic--release-e10079.svg)](https://github.com/semantic-release/semantic-release)
 
 This repository contains the following sample deployable architectures:
-- [Terraform-based fullstack sample deployable architecture - COS bucket replication](./solutions/tf-fullstack-da)
-- [Terraform-based extension sample deployable architecture - Serving static websites with IBM Cloud Object Storage](./solutions/tf-extension-da)
+- [Sample terraform-based deployable architecture without dependencies (fullstack) - COS bucket replication](./solutions/tf-fullstack-da)
+- [Sample terraform-based deployable architecture with dependencies (extension) - Serving static websites with IBM Cloud Object Storage](./solutions/tf-extension-da)
 
 :exclamation: These solutions are not intended to be called by one or more other modules since they contain provider configurations, meaning they are not compatible with the `for_each`, `count`, and `depends_on` arguments. For more information see [Providers Within Modules](https://developer.hashicorp.com/terraform/language/modules/develop/providers).
 
