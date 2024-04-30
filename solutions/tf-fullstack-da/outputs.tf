@@ -23,7 +23,7 @@ output "cos_instance_guid" {
 }
 
 output "cos_instance_crn" {
-  description = "COS instance crn"
+  description = "Object Storage instance CRN"
   value       = module.cos_instance.cos_instance_crn
 }
 
