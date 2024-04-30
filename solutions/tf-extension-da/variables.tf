@@ -4,7 +4,7 @@
 
 variable "ibmcloud_api_key" {
   type        = string
-  description = "The API Key to use for IBM Cloud."
+  description = "The IBM Cloud API key needed to deploy IAM-enabled resources."
   sensitive   = true
 }
 
