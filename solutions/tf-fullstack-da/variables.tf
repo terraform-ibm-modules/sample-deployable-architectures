@@ -28,7 +28,7 @@ variable "resource_group_name" {
 variable "cos_instance_name" {
   type        = string
   default     = "cos-instance"
-  description = "The name to use when creating the Cloud Object Storage instance. If prefix input variable is passed then it will get prefixed infront of the value in the format of '<prefix>-value'."
+  description = "The name to use when creating the IBM Cloud Object Storage instance. If the `prefix` input is passed, it is added before this value, in the format `<prefix>-value`."
 }
 
 variable "cos_source_bucket_name" {
