@@ -13,12 +13,12 @@ output "resource_group_id" {
 }
 
 output "cos_instance_id" {
-  description = "COS instance id"
+  description = "Object Storage instance id"
   value       = module.cos_instance.cos_instance_id
 }
 
 output "cos_instance_guid" {
-  description = "COS instance guid"
+  description = "Object Storage instance guid"
   value       = module.cos_instance.cos_instance_guid
 }
 
@@ -28,61 +28,61 @@ output "cos_instance_crn" {
 }
 
 output "cos_source_bucket_name" {
-  description = "COS source bucket name"
+  description = "Object Storage source bucket name"
   value       = module.cos_buckets.buckets[local.cos_source_bucket_name].bucket_name
 }
 
 output "cos_source_bucket_id" {
-  description = "COS source bucket id"
+  description = "Object Storage source bucket id"
   value       = module.cos_buckets.buckets[local.cos_source_bucket_name].bucket_id
 }
 
 output "cos_source_bucket_crn" {
-  description = "COS source bucket crn"
+  description = "Object Storage source bucket crn"
   value       = module.cos_buckets.buckets[local.cos_source_bucket_name].bucket_crn
 }
 
 output "cos_source_bucket_s3_endpoint_private" {
-  description = "COS source private endpoint"
+  description = "Object Storage source private endpoint"
   value       = module.cos_buckets.buckets[local.cos_source_bucket_name].s3_endpoint_private
 }
 
 output "cos_source_bucket_s3_endpoint_public" {
-  description = "COS source public endpoint"
+  description = "Object Storage source public endpoint"
   value       = module.cos_buckets.buckets[local.cos_source_bucket_name].s3_endpoint_public
 }
 
 output "cos_source_bucket_s3_endpoint_direct" {
-  description = "COS source direct endpoint"
+  description = "Object Storage source direct endpoint"
   value       = module.cos_buckets.buckets[local.cos_source_bucket_name].s3_endpoint_direct
 }
 
 output "cos_target_bucket_name" {
-  description = "COS target bucket name"
+  description = "Object Storage target bucket name"
   value       = module.cos_buckets.buckets[local.cos_target_bucket_name].bucket_name
 }
 
 output "cos_target_bucket_id" {
-  description = "COS target bucket id"
+  description = "Object Storage target bucket ID"
   value       = module.cos_buckets.buckets[local.cos_target_bucket_name].bucket_id
 }
 
 output "cos_target_bucket_crn" {
-  description = "COS target bucket crn"
+  description = "Object Storage target bucket CRN"
   value       = module.cos_buckets.buckets[local.cos_target_bucket_name].bucket_crn
 }
 
 output "cos_target_bucket_s3_endpoint_private" {
-  description = "COS target private endpoint"
+  description = "Object Storage target private endpoint"
   value       = module.cos_buckets.buckets[local.cos_target_bucket_name].s3_endpoint_private
 }
 
 output "cos_target_bucket_s3_endpoint_public" {
-  description = "COS target public endpoint"
+  description = "Object Storage target public endpoint"
   value       = module.cos_buckets.buckets[local.cos_target_bucket_name].s3_endpoint_public
 }
 
 output "cos_target_bucket_s3_endpoint_direct" {
-  description = "COS target direct endpoint"
+  description = "Object Storage target direct endpoint"
   value       = module.cos_buckets.buckets[local.cos_target_bucket_name].s3_endpoint_direct
 }
