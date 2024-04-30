@@ -46,7 +46,7 @@ variable "cos_source_bucket_region" {
 variable "cos_target_bucket_name" {
   type        = string
   default     = "target-bucket"
-  description = "The name to use when creating the target Cloud Object Storage bucket (NOTE: bucket names are globally unique). If 'add_bucket_name_suffix' is set to true, a random 4 characters will be added to this name to help ensure bucket name is globally unique. If prefix input variable is passed then it will get prefixed infront of the value in the format of '<prefix>-value'."
+  description = "The globally unique name to use for the target Cloud Object Storage bucket. If the `add_bucket_name_suffix` input is set to `true`, a random 4-character string is appended to this name to help ensure that the bucket name is globally unique. If the `prefix` input is passed, it is added before this value, in the format `<prefix>-value`."
 }
 
 variable "cos_target_bucket_region" {
