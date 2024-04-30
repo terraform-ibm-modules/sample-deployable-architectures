@@ -10,7 +10,7 @@ This repository contains the following sample deployable architectures:
 - [Sample terraform-based deployable architecture without dependencies (fullstack) - COS bucket replication](./solutions/tf-fullstack-da)
 - [Sample terraform-based deployable architecture with dependencies (extension) - Serving static websites with IBM Cloud Object Storage](./solutions/tf-extension-da)
 
-:exclamation: These solutions are not intended to be called by one or more other modules since they contain provider configurations, meaning they are not compatible with the `for_each`, `count`, and `depends_on` arguments. For more information see [Providers Within Modules](https://developer.hashicorp.com/terraform/language/modules/develop/providers).
+:exclamation: **Important:** These solutions are not intended to be called by other modules because they contain provider configurations and are not compatible with the `for_each`, `count`, and `depends_on` Terraform arguments. For more information, see [Providers Within Modules](https://developer.hashicorp.com/terraform/language/modules/develop/providers).
 
 The repository is also configured with the following things:
 - [A GitHub Actions workflow to run the common CI pipeline for Terraform](./.github/workflows). For more information, see the common-pipeline-assets [readme file](https://github.com/terraform-ibm-modules/common-pipeline-assets/blob/main/README.md)).
