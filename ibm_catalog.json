@@ -28,8 +28,8 @@
             "provider_name": "IBM",
             "features": [
                 {
-                    "title": "Creates and configures Cloud Object Storage buckets",
-                    "description": "Yes"
+                    "title": "Configures IBM Cloud Object Storage buckets",
+                    "description": "Enabling preconfigured options for your Object Storage buckets."
                 }
             ],
             "flavors": [
