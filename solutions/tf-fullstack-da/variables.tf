@@ -22,7 +22,7 @@ variable "use_existing_resource_group" {
 
 variable "resource_group_name" {
   type        = string
-  description = "The name of a new or an existing resource group in which to provision resources to. If prefix input variable is passed then it will get prefixed infront of the value in the format of '<prefix>-value'."
+  description = "The name of a new or an existing resource group to provision resources to. If the `prefix` input is passed, it is added before this value, in the format `<prefix>-value`."
 }
 
 variable "cos_instance_name" {
