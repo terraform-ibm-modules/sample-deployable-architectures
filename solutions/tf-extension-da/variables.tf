@@ -10,7 +10,7 @@ variable "ibmcloud_api_key" {
 
 variable "cos_instance_guid" {
   type        = string
-  description = "The Object Storage instance GUID in which the bucket exists"
+  description = "The GUID of the Object Storage instance to configure."
 }
 
 variable "cos_bucket_name" {
