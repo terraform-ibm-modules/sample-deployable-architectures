@@ -57,6 +57,6 @@ variable "cos_target_bucket_region" {
 
 variable "add_bucket_name_suffix" {
   type        = bool
-  description = "Add random generated suffix (4 characters long) to the COS bucket names. Set to false if you want full control over bucket naming using the 'cos_source_bucket_name' and 'cos_target_bucket_name' variables."
+  description = "Whether to append a randomly generated 4-character string to the Object Storage bucket names. Set to `false` for full control over the names in the `cos_source_bucket_name` and `cos_target_bucket_name` inputs."
   default     = true
 }
