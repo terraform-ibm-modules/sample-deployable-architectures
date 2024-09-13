@@ -96,7 +96,8 @@
                         ],
                         "id": "TBC",
                         "name": "deploy-arch-ibm-cos-config",
-                        "version": ">=v1.0.0"
+                        "version": ">=v1.0.0",
+                        "optional": true
                      }
                     ],
                     "architecture": {
