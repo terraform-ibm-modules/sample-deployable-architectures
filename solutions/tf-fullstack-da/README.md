@@ -28,7 +28,7 @@ This solution provisions the following resources:
 | Name | Version |
 |------|---------|
 | <a name="requirement_terraform"></a> [terraform](#requirement\_terraform) | >= 1.3.0 |
-| <a name="requirement_ibm"></a> [ibm](#requirement\_ibm) | 1.71.2 |
+| <a name="requirement_ibm"></a> [ibm](#requirement\_ibm) | 1.71.3 |
 
 ### Modules
 
@@ -42,9 +42,9 @@ This solution provisions the following resources:
 
 | Name | Type |
 |------|------|
-| [ibm_cos_bucket_replication_rule.cos_replication_rule](https://registry.terraform.io/providers/ibm-cloud/ibm/1.71.2/docs/resources/cos_bucket_replication_rule) | resource |
-| [ibm_iam_authorization_policy.policy](https://registry.terraform.io/providers/ibm-cloud/ibm/1.71.2/docs/resources/iam_authorization_policy) | resource |
-| [ibm_iam_account_settings.iam_account_settings](https://registry.terraform.io/providers/ibm-cloud/ibm/1.71.2/docs/data-sources/iam_account_settings) | data source |
+| [ibm_cos_bucket_replication_rule.cos_replication_rule](https://registry.terraform.io/providers/ibm-cloud/ibm/1.71.3/docs/resources/cos_bucket_replication_rule) | resource |
+| [ibm_iam_authorization_policy.policy](https://registry.terraform.io/providers/ibm-cloud/ibm/1.71.3/docs/resources/iam_authorization_policy) | resource |
+| [ibm_iam_account_settings.iam_account_settings](https://registry.terraform.io/providers/ibm-cloud/ibm/1.71.3/docs/data-sources/iam_account_settings) | data source |
 
 ### Inputs
 

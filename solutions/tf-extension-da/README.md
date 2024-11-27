@@ -40,7 +40,7 @@ This solution configures the following infrastructure to host a static website:
 | Name | Version |
 |------|---------|
 | <a name="requirement_terraform"></a> [terraform](#requirement\_terraform) | >= 1.3.0 |
-| <a name="requirement_ibm"></a> [ibm](#requirement\_ibm) | 1.71.2 |
+| <a name="requirement_ibm"></a> [ibm](#requirement\_ibm) | 1.71.3 |
 
 ### Modules
 
@@ -50,9 +50,9 @@ No modules.
 
 | Name | Type |
 |------|------|
-| [ibm_cos_bucket_website_configuration.website](https://registry.terraform.io/providers/ibm-cloud/ibm/1.71.2/docs/resources/cos_bucket_website_configuration) | resource |
-| [ibm_iam_access_group_policy.policy](https://registry.terraform.io/providers/ibm-cloud/ibm/1.71.2/docs/resources/iam_access_group_policy) | resource |
-| [ibm_iam_access_group.public_access_group](https://registry.terraform.io/providers/ibm-cloud/ibm/1.71.2/docs/data-sources/iam_access_group) | data source |
+| [ibm_cos_bucket_website_configuration.website](https://registry.terraform.io/providers/ibm-cloud/ibm/1.71.3/docs/resources/cos_bucket_website_configuration) | resource |
+| [ibm_iam_access_group_policy.policy](https://registry.terraform.io/providers/ibm-cloud/ibm/1.71.3/docs/resources/iam_access_group_policy) | resource |
+| [ibm_iam_access_group.public_access_group](https://registry.terraform.io/providers/ibm-cloud/ibm/1.71.3/docs/data-sources/iam_access_group) | data source |
 
 ### Inputs
 
