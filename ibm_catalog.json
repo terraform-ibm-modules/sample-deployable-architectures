@@ -89,7 +89,6 @@
                     "name": "static-website-configurator",
                     "install_type": "extension",
                     "working_directory": "solutions/tf-extension-da",
-                    "dependency_version_2": true,
                     "dependencies": [
                      {
                         "flavors": [
