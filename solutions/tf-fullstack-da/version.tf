@@ -4,7 +4,7 @@ terraform {
     # Lock deployable architecture into an exact provider version - renovate automation will keep it updated
     ibm = {
       source  = "ibm-cloud/ibm"
-      version = "1.71.3"
+      version = "1.72.2"
     }
   }
 }
