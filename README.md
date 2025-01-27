@@ -17,7 +17,7 @@ The repository is also configured with the following things:
 - A [common-dev-assets](./common-dev-assets) Git submodule with common automation that is used for CI and development. For more information, see [Local development setup](https://terraform-ibm-modules.github.io/documentation/#/local-dev-setup)).
 - An [ibm_catalog.json](ibm_catalog.json) file that is used for onboarding the sample deployable architectures to the IBM Cloud catalog.
 - A [.catalog-onboard-pipeline.yaml](.catalog-onboard-pipeline.yaml) file that is used by an IBM internal pipeline to onboard deployable architectures to the IBM catalog.
-- A [renovate.json](renovate.json) file that supports automatic creation of PRs to update dependencies. The Renovate pipeline runs regularly against all repos in the [terraform-ibm-modules](https://github.com/terraform-ibm-modules) org.g.
+- A [renovate.json](renovate.json) file that supports automatic creation of PRs to update dependencies. The Renovate pipeline runs regularly against all repos in the [terraform-ibm-modules](https://github.com/terraform-ibm-modules) org.
 
 <!-- Leave this section as is so that your module has a link to local development environment set up steps for contributors to follow -->
 ## Contributing
