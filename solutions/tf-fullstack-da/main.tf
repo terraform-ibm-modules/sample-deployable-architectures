@@ -8,7 +8,7 @@
 # optionally create the resource group, or lookup existing one
 module "resource_group" {
   source                       = "terraform-ibm-modules/resource-group/ibm"
-  version                      = "1.1.6"
+  version                      = "1.2.0"
   resource_group_name          = var.use_existing_resource_group == false ? (var.prefix != null ? "${var.prefix}-${var.resource_group_name}" : var.resource_group_name) : null
   existing_resource_group_name = var.use_existing_resource_group == true ? var.resource_group_name : null
 }
@@ -16,7 +16,7 @@ module "resource_group" {
 # create global COS instance
 module "cos_instance" {
   source            = "terraform-ibm-modules/cos/ibm"
-  version           = "8.19.2"
+  version           = "8.21.21"
   resource_group_id = module.resource_group.resource_group_id
   cos_instance_name = var.prefix != null ? "${var.prefix}-${var.cos_instance_name}" : var.cos_instance_name
   create_cos_bucket = false
@@ -30,7 +30,7 @@ locals {
 
 module "cos_buckets" {
   source  = "terraform-ibm-modules/cos/ibm//modules/buckets"
-  version = "8.19.2"
+  version = "8.21.21"
   bucket_configs = [
     {
       bucket_name            = local.cos_source_bucket_name
