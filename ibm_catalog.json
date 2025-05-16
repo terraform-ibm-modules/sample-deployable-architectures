@@ -38,7 +38,6 @@
           "name": "replication",
           "install_type": "fullstack",
           "working_directory": "solutions/tf-fullstack-da",
-          "compliance": {},
           "iam_permissions": [
             {
               "role_crns": [
@@ -80,7 +79,39 @@
                 "description": "This architecture supports creating and configuring Object Storage bucket replication."
               }
             ]
-          }
+          },
+          "configuration": [
+            {
+              "key": "add_bucket_name_suffix"
+            },
+            {
+              "key": "cos_instance_name"
+            },
+            {
+              "key": "cos_source_bucket_name"
+            },
+            {
+              "key": "cos_source_bucket_region"
+            },
+            {
+              "key": "cos_target_bucket_name"
+            },
+            {
+              "key": "cos_target_bucket_region"
+            },
+            {
+              "key": "ibmcloud_api_key"
+            },
+            {
+              "key": "prefix"
+            },
+            {
+              "key": "resource_group_name"
+            },
+            {
+              "key": "use_existing_resource_group"
+            }
+            ]
         },
         {
           "label": "Static website configurator",
@@ -119,7 +150,30 @@
                 "description": "Configure the website to use your documents as an index for the site and to potentially display errors"
               }
             ]
-          }
+          },
+           "configuration": [
+            {
+              "key": "cos_bucket_crn"
+            },
+            {
+              "key": "cos_bucket_location"
+            },
+            {
+              "key": "cos_bucket_name"
+            },
+            {
+              "key": "cos_instance_guid"
+            },
+            {
+              "key": "error_document"
+            },
+            {
+              "key": "ibmcloud_api_key"
+            },
+            {
+              "key": "index_document"
+            }
+        ]
         }
       ]
     }
