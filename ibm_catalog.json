@@ -74,7 +74,7 @@
               {
                 "diagram": {
                   "caption": "Object Storage buckets with replication",
-                  "url": "https://raw.githubusercontent.com/terraform-ibm-modules/sample-deployable-architectures/main/reference-architecture/cos-replication.svg",
+                  "url": "https://raw.githubusercontent.com/terraform-ibm-modules/sample-deployable-architectures/main/reference-architectures/cos-replication.svg",
                   "type": "image/svg+xml"
                 },
                 "description": "This architecture supports creating and configuring Object Storage bucket replication."
@@ -238,7 +238,7 @@
               {
                 "diagram": {
                   "caption": "Static website configurator",
-                  "url": "https://raw.githubusercontent.com/terraform-ibm-modules/sample-deployable-architectures/main/reference-architecture/cos-website.svg",
+                  "url": "https://raw.githubusercontent.com/terraform-ibm-modules/sample-deployable-architectures/main/reference-architectures/cos-website.svg",
                   "type": "image/svg+xml"
                 },
                 "description": "Configure the website to use your documents as an index for the site and to potentially display errors"
