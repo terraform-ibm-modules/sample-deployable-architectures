@@ -205,7 +205,8 @@
               "key": "use_existing_resource_group"
             }
           ],
-          "terraform_version": "1.12.2"
+          "terraform_version": "1.12.2",
+          "ignore_readme": true
         },
         {
           "label": "Static website configurator",
@@ -314,7 +315,8 @@
               "key": "index_document"
             }
           ],
-          "terraform_version": "1.12.2"
+          "terraform_version": "1.12.2",
+          "ignore_readme": true
         }
       ]
     }
