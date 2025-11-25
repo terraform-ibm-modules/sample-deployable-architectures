@@ -17,31 +17,66 @@ const tfFullstackDADir = "solutions/tf-fullstack-da"
 /*******************************************************************
 * TESTS FOR THE TERRAFORM BASED FULLSTACK DEPLOYABLE ARCHITECTURE  *
 *******************************************************************/
-func TestRunTfFullstackDASchematics(t *testing.T) {
-	t.Parallel()
 
-	// Set up a schematics test
+func setupFullstackDAOptions(t *testing.T, prefix string) *testschematic.TestSchematicOptions {
+
 	options := testschematic.TestSchematicOptionsDefault(&testschematic.TestSchematicOptions{
-		Testing:            t,
-		TarIncludePatterns: []string{"*.tf", fmt.Sprintf("%s/*.tf", tfFullstackDADir)},
-		TemplateFolder:     tfFullstackDADir,
+		Testing: t,
+		Prefix:  prefix,
+		TarIncludePatterns: []string{
+			"*.tf",
+			fmt.Sprintf("%s/*.tf", tfFullstackDADir),
+		},
 		// This is the resource group that the workspace will be created in
 		ResourceGroup:          resourceGroup,
-		Prefix:                 "tf-full-da",
+		TemplateFolder:         tfFullstackDADir,
 		Tags:                   []string{"test-schematic"},
 		DeleteWorkspaceOnFail:  false,
 		WaitJobCompleteMinutes: 60,
 	})
 
-	// Pass required variables
+	// Terraform Variables
 	options.TerraformVars = []testschematic.TestSchematicTerraformVar{
-		{Name: "ibmcloud_api_key", Value: options.RequiredEnvironmentVars["TF_VAR_ibmcloud_api_key"], DataType: "string", Secure: true},
-		// use options.Prefix here to generate a unique prefix every time so resource group name is unique for every test
-		{Name: "resource_group_name", Value: options.Prefix, DataType: "string"},
+		{
+			Name:     "ibmcloud_api_key",
+			Value:    options.RequiredEnvironmentVars["TF_VAR_ibmcloud_api_key"],
+			DataType: "string",
+			Secure:   true,
+		},
+		{
+			Name:     "resource_group_name", // use options.Prefix here to generate a unique prefix every time so resource group name is unique for every test
+			Value:    options.Prefix,        // unique per test
+			DataType: "string",
+		},
 	}
 
+	return options
+}
+
+// Set up a schematics test
+func TestRunFullstackDASchematics(t *testing.T) {
+	t.Parallel()
+
+	// Set up options using the reusable setup function
+	options := setupFullstackDAOptions(t, "tf-full-da")
+
+	// Run the schematics test
 	err := options.RunSchematicTest()
 	assert.NoError(t, err, "Schematic Test had unexpected error")
+}
+
+// Set up a schematics upgrade test
+func TestRunFullstackDASchematicUpgrade(t *testing.T) {
+	t.Parallel()
+
+	options := setupFullstackDAOptions(t, "tf-full-da-upgrade")
+	options.CheckApplyResultForUpgrade = true
+
+	// Run the upgrade test
+	err := options.RunSchematicUpgradeTest()
+	if !options.UpgradeTestSkipped {
+		assert.NoError(t, err, "Fullstack DA upgrade test should complete without errors")
+	}
 }
 
 func TestRunTfFullstackDAUpgrade(t *testing.T) {

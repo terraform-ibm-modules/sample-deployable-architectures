@@ -5,7 +5,7 @@ This architecture extends another deployable architecture.
 This solution is an "extension" type of deployable architecture, which requires other deployable architectures as prerequisites. You specify the type of deployable architecture and those prerequisites in the `ibm_catalog.json` file.
 
 - The `install_type` for this deployable architecture is set to `extension`.
-- The `dependencies` array identifies the prequisite deployable architectures.
+- The `dependencies` array identifies the prerequisite deployable architectures.
 
 In this solution, the dependency is on the [Sample terraform-based deployable architecture without dependencies](../tf-fullstack-da).
 
