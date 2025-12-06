@@ -53,7 +53,7 @@ func setupFullstackDAOptions(t *testing.T, prefix string) *testschematic.TestSch
 }
 
 // Set up a schematics test
-func TestRunFullstackDASchematics(t *testing.T) {
+func TestRunFullstackDASchematis(t *testing.T) {
 	t.Parallel()
 
 	// Set up options using the reusable setup function
@@ -65,7 +65,7 @@ func TestRunFullstackDASchematics(t *testing.T) {
 }
 
 // Set up a schematics upgrade test
-func TestRunFullstackDASchematicUpgrade(t *testing.T) {
+func TestRunFullstackDASchematicsUpgrade(t *testing.T) {
 	t.Parallel()
 
 	options := setupFullstackDAOptions(t, "tf-full-da-upg")
