@@ -6,7 +6,6 @@ import (
 	"testing"
 
 	"github.com/stretchr/testify/assert"
-	"github.com/terraform-ibm-modules/ibmcloud-terratest-wrapper/testhelper"
 	"github.com/terraform-ibm-modules/ibmcloud-terratest-wrapper/testschematic"
 )
 
@@ -69,36 +68,13 @@ func TestRunFullstackDASchematics(t *testing.T) {
 func TestRunFullstackDASchematicUpgrade(t *testing.T) {
 	t.Parallel()
 
-	options := setupFullstackDAOptions(t, "tf-full-da-upgrade")
+	options := setupFullstackDAOptions(t, "tf-full-da-upg")
 	options.CheckApplyResultForUpgrade = true
 
 	// Run the upgrade test
 	err := options.RunSchematicUpgradeTest()
 	if !options.UpgradeTestSkipped {
 		assert.NoError(t, err, "Fullstack DA upgrade test should complete without errors")
-	}
-}
-
-func TestRunTfFullstackDAUpgrade(t *testing.T) {
-	t.Parallel()
-
-	// Set up upgrade test
-	options := testhelper.TestOptionsDefault(&testhelper.TestOptions{
-		Testing:      t,
-		TerraformDir: tfFullstackDADir,
-		Prefix:       "tf-full-da-upg",
-	})
-
-	// Pass required variables (NOTE: ibmcloud_api_key is passed directly in test as TF_VAR so no need to include here)
-	options.TerraformVars = map[string]interface{}{
-		// use options.Prefix here to generate a unique prefix every time so resource group name is unique for every test
-		"resource_group_name": options.Prefix,
-	}
-
-	output, err := options.RunTestUpgrade()
-	if !options.UpgradeTestSkipped {
-		assert.Nil(t, err, "This should not have errored")
-		assert.NotNil(t, output, "Expected some output")
 	}
 }
 
