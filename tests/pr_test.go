@@ -34,7 +34,7 @@ func setupFullstackDAOptions(t *testing.T, prefix string) *testschematic.TestSch
 		WaitJobCompleteMinutes: 60,
 	})
 
-	// Terraform Variables
+	// Pass required variables (NOTE: ibmcloud_api_key is passed directly in test as TF_VAR so no need to include here)
 	options.TerraformVars = []testschematic.TestSchematicTerraformVar{
 		{
 			Name:     "ibmcloud_api_key",
