@@ -53,7 +53,7 @@ func setupFullstackDAOptions(t *testing.T, prefix string) *testschematic.TestSch
 }
 
 // Set up a schematics test
-func TestRunFullstackDASchematis(t *testing.T) {
+func TestRunFullstackDASchematics(t *testing.T) {
 	t.Parallel()
 
 	// Set up options using the reusable setup function
