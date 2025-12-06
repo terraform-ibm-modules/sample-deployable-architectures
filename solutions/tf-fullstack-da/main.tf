@@ -8,7 +8,7 @@
 # optionally create the resource group, or lookup existing one
 module "resource_group" {
   source                       = "terraform-ibm-modules/resource-group/ibm"
-  version                      = "1.4.0"
+  version                      = "1.4.2"
   resource_group_name          = var.use_existing_resource_group == false ? (var.prefix != null ? "${var.prefix}-${var.resource_group_name}" : var.resource_group_name) : null
   existing_resource_group_name = var.use_existing_resource_group == true ? var.resource_group_name : null
 }
