@@ -203,6 +203,24 @@
             },
             {
               "key": "use_existing_resource_group"
+            },
+            {
+              "key": "provider_visibility",
+              "hidden": true,
+              "options": [
+                {
+                  "displayname": "private",
+                  "value": "private"
+                },
+                {
+                  "displayname": "public",
+                  "value": "public"
+                },
+                {
+                  "displayname": "public-and-private",
+                  "value": "public-and-private"
+                }
+              ]
             }
           ],
           "terraform_version": "1.12.2",
@@ -313,6 +331,24 @@
             },
             {
               "key": "index_document"
+            },
+            {
+              "key": "provider_visibility",
+              "hidden": true,
+              "options": [
+                {
+                  "displayname": "private",
+                  "value": "private"
+                },
+                {
+                  "displayname": "public",
+                  "value": "public"
+                },
+                {
+                  "displayname": "public-and-private",
+                  "value": "public-and-private"
+                }
+              ]
             }
           ],
           "terraform_version": "1.12.2",
