@@ -214,7 +214,7 @@
           "name": "static-website-configurator",
           "install_type": "extension",
           "working_directory": "solutions/tf-extension-da",
-          "short_description": "Ideal for hosting static websites on IBM Cloud Object Storage. Configures public access and website settings for an existing bucket.",
+          "short_description": "Extension that enables public access for an existing IBM Cloud Object Storage bucket.",
           "dependencies": [
             {
               "flavors": [
