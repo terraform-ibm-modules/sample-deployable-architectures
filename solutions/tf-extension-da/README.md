@@ -65,6 +65,7 @@ No modules.
 | <a name="input_error_document"></a> [error\_document](#input\_error\_document) | The name of the HTML file that exists in the bucket to use when a static website bucket error occurs. | `string` | `"error.html"` | no |
 | <a name="input_ibmcloud_api_key"></a> [ibmcloud\_api\_key](#input\_ibmcloud\_api\_key) | The IBM Cloud API key needed to deploy IAM-enabled resources. | `string` | n/a | yes |
 | <a name="input_index_document"></a> [index\_document](#input\_index\_document) | The name of the HTML file that exists in the bucket to use as the home or default page of the website. | `string` | `"index.html"` | no |
+| <a name="input_provider_visibility"></a> [provider\_visibility](#input\_provider\_visibility) | Set the visibility value for the IBM terraform provider. Supported values are `public`, `private`, `public-and-private`. [Learn more](https://registry.terraform.io/providers/IBM-Cloud/ibm/latest/docs/guides/custom-service-endpoints). | `string` | `"private"` | no |
 
 ### Outputs
 

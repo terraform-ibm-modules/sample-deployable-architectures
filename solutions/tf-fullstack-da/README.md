@@ -58,6 +58,7 @@ This solution provisions the following resources:
 | <a name="input_cos_target_bucket_region"></a> [cos\_target\_bucket\_region](#input\_cos\_target\_bucket\_region) | The region to provision the target Cloud Object Storage bucket. | `string` | `"us-east"` | no |
 | <a name="input_ibmcloud_api_key"></a> [ibmcloud\_api\_key](#input\_ibmcloud\_api\_key) | The IBM Cloud API key needed to deploy IAM-enabled resources. | `string` | n/a | yes |
 | <a name="input_prefix"></a> [prefix](#input\_prefix) | Prefix for all resources created by this solution. | `string` | `null` | no |
+| <a name="input_provider_visibility"></a> [provider\_visibility](#input\_provider\_visibility) | Set the visibility value for the IBM terraform provider. Supported values are `public`, `private`, `public-and-private`. [Learn more](https://registry.terraform.io/providers/IBM-Cloud/ibm/latest/docs/guides/custom-service-endpoints). | `string` | `"private"` | no |
 | <a name="input_resource_group_name"></a> [resource\_group\_name](#input\_resource\_group\_name) | The name of a new or an existing resource group to provision resources to. If the `prefix` input is passed, it is added before this value, in the format `<prefix>-value`. | `string` | n/a | yes |
 | <a name="input_use_existing_resource_group"></a> [use\_existing\_resource\_group](#input\_use\_existing\_resource\_group) | Whether to use an existing resource group. | `bool` | `false` | no |
 
