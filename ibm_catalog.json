@@ -39,6 +39,7 @@
           "name": "replication",
           "install_type": "fullstack",
           "working_directory": "solutions/tf-fullstack-da",
+          "short_description": "Ideal for users who need cross-region data replication. Provisions Object Storage buckets and configures bucket-level replication.",
           "iam_permissions": [
             {
               "role_crns": [
@@ -213,6 +214,7 @@
           "name": "static-website-configurator",
           "install_type": "extension",
           "working_directory": "solutions/tf-extension-da",
+          "short_description": "Ideal for hosting static websites on IBM Cloud Object Storage. Configures public access and website settings for an existing bucket as an extension.",
           "dependencies": [
             {
               "flavors": [
