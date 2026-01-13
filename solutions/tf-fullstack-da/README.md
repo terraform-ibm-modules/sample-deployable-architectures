@@ -44,7 +44,6 @@ This solution provisions the following resources:
 |------|------|
 | [ibm_cos_bucket_replication_rule.cos_replication_rule](https://registry.terraform.io/providers/ibm-cloud/ibm/1.86.1/docs/resources/cos_bucket_replication_rule) | resource |
 | [ibm_iam_authorization_policy.policy](https://registry.terraform.io/providers/ibm-cloud/ibm/1.86.1/docs/resources/iam_authorization_policy) | resource |
-| [ibm_iam_account_settings.iam_account_settings](https://registry.terraform.io/providers/ibm-cloud/ibm/1.86.1/docs/data-sources/iam_account_settings) | data source |
 
 ### Inputs
 
