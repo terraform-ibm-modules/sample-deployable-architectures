@@ -78,17 +78,13 @@ resource "ibm_cos_bucket_replication_rule" "cos_replication_rule" {
 # to create the IAM authorization policy required to configure replication.     #
 #################################################################################
 
-# use data source to get the account ID required to create the authorization policy
-data "ibm_iam_account_settings" "iam_account_settings" {
-}
-
 resource "ibm_iam_authorization_policy" "policy" {
   roles = [
     "Writer",
   ]
   subject_attributes {
     name  = "accountId"
-    value = data.ibm_iam_account_settings.iam_account_settings.account_id
+    value = module.cos_instance.cos_account_id
   }
   subject_attributes {
     name  = "serviceName"
@@ -108,7 +104,7 @@ resource "ibm_iam_authorization_policy" "policy" {
   }
   resource_attributes {
     name  = "accountId"
-    value = data.ibm_iam_account_settings.iam_account_settings.account_id
+    value = module.cos_instance.cos_account_id
   }
   resource_attributes {
     name  = "serviceName"
