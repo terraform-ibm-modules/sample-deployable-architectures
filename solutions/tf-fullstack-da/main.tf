@@ -16,7 +16,7 @@ module "resource_group" {
 # create global COS instance
 module "cos_instance" {
   source            = "terraform-ibm-modules/cos/ibm"
-  version           = "10.9.8"
+  version           = "10.9.9"
   resource_group_id = module.resource_group.resource_group_id
   cos_instance_name = var.prefix != null ? "${var.prefix}-${var.cos_instance_name}" : var.cos_instance_name
   create_cos_bucket = false
@@ -30,7 +30,7 @@ locals {
 
 module "cos_buckets" {
   source  = "terraform-ibm-modules/cos/ibm//modules/buckets"
-  version = "10.9.8"
+  version = "10.9.9"
   bucket_configs = [
     {
       bucket_name            = local.cos_source_bucket_name
