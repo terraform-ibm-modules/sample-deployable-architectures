@@ -28,7 +28,7 @@ This solution provisions the following resources:
 | Name | Version |
 |------|---------|
 | <a name="requirement_terraform"></a> [terraform](#requirement\_terraform) | >= 1.9.0 |
-| <a name="requirement_ibm"></a> [ibm](#requirement\_ibm) | >= 1.89.0, < 2.0.0 |
+| <a name="requirement_ibm"></a> [ibm](#requirement\_ibm) | 1.89.0 |
 
 ### Modules
 
@@ -42,8 +42,8 @@ This solution provisions the following resources:
 
 | Name | Type |
 |------|------|
-| [ibm_cos_bucket_replication_rule.cos_replication_rule](https://registry.terraform.io/providers/ibm-cloud/ibm/latest/docs/resources/cos_bucket_replication_rule) | resource |
-| [ibm_iam_authorization_policy.policy](https://registry.terraform.io/providers/ibm-cloud/ibm/latest/docs/resources/iam_authorization_policy) | resource |
+| [ibm_cos_bucket_replication_rule.cos_replication_rule](https://registry.terraform.io/providers/ibm-cloud/ibm/1.89.0/docs/resources/cos_bucket_replication_rule) | resource |
+| [ibm_iam_authorization_policy.policy](https://registry.terraform.io/providers/ibm-cloud/ibm/1.89.0/docs/resources/iam_authorization_policy) | resource |
 
 ### Inputs
 
