@@ -38,9 +38,9 @@ This solution configures the following infrastructure to host a static website:
 ### Requirements
 
 | Name | Version |
-|------|---------|
+| ---- | ------- |
 | <a name="requirement_terraform"></a> [terraform](#requirement\_terraform) | >= 1.9.0 |
-| <a name="requirement_ibm"></a> [ibm](#requirement\_ibm) | 2.6.2 |
+| <a name="requirement_ibm"></a> [ibm](#requirement\_ibm) | 2.7.0 |
 
 ### Modules
 
@@ -49,15 +49,15 @@ No modules.
 ### Resources
 
 | Name | Type |
-|------|------|
-| [ibm_cos_bucket_website_configuration.website](https://registry.terraform.io/providers/ibm-cloud/ibm/2.6.2/docs/resources/cos_bucket_website_configuration) | resource |
-| [ibm_iam_access_group_policy.policy](https://registry.terraform.io/providers/ibm-cloud/ibm/2.6.2/docs/resources/iam_access_group_policy) | resource |
-| [ibm_iam_access_group.public_access_group](https://registry.terraform.io/providers/ibm-cloud/ibm/2.6.2/docs/data-sources/iam_access_group) | data source |
+| ---- | ---- |
+| [ibm_cos_bucket_website_configuration.website](https://registry.terraform.io/providers/ibm-cloud/ibm/2.7.0/docs/resources/cos_bucket_website_configuration) | resource |
+| [ibm_iam_access_group_policy.policy](https://registry.terraform.io/providers/ibm-cloud/ibm/2.7.0/docs/resources/iam_access_group_policy) | resource |
+| [ibm_iam_access_group.public_access_group](https://registry.terraform.io/providers/ibm-cloud/ibm/2.7.0/docs/data-sources/iam_access_group) | data source |
 
 ### Inputs
 
 | Name | Description | Type | Default | Required |
-|------|-------------|------|---------|:--------:|
+| ---- | ----------- | ---- | ------- | :------: |
 | <a name="input_cos_bucket_crn"></a> [cos\_bucket\_crn](#input\_cos\_bucket\_crn) | The CRN of the Object Storage bucket to configure. | `string` | n/a | yes |
 | <a name="input_cos_bucket_location"></a> [cos\_bucket\_location](#input\_cos\_bucket\_location) | The location of the Object Storage bucket. | `string` | n/a | yes |
 | <a name="input_cos_bucket_name"></a> [cos\_bucket\_name](#input\_cos\_bucket\_name) | The name of the Object Storage bucket to configure. | `string` | n/a | yes |
@@ -70,7 +70,7 @@ No modules.
 ### Outputs
 
 | Name | Description |
-|------|-------------|
+| ---- | ----------- |
 | <a name="output_access_group_id"></a> [access\_group\_id](#output\_access\_group\_id) | Access group ID. |
 | <a name="output_website_endpoint"></a> [website\_endpoint](#output\_website\_endpoint) | Website endpoint. |
 <!-- END OF PRE-COMMIT-TERRAFORM DOCS HOOK -->
