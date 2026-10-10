@@ -26,14 +26,14 @@ This solution provisions the following resources:
 ### Requirements
 
 | Name | Version |
-|------|---------|
+| ---- | ------- |
 | <a name="requirement_terraform"></a> [terraform](#requirement\_terraform) | >= 1.9.0 |
-| <a name="requirement_ibm"></a> [ibm](#requirement\_ibm) | 2.6.2 |
+| <a name="requirement_ibm"></a> [ibm](#requirement\_ibm) | 2.7.0 |
 
 ### Modules
 
 | Name | Source | Version |
-|------|--------|---------|
+| ---- | ------ | ------- |
 | <a name="module_cos_buckets"></a> [cos\_buckets](#module\_cos\_buckets) | terraform-ibm-modules/cos/ibm//modules/buckets | 11.0.0 |
 | <a name="module_cos_instance"></a> [cos\_instance](#module\_cos\_instance) | terraform-ibm-modules/cos/ibm | 11.0.0 |
 | <a name="module_resource_group"></a> [resource\_group](#module\_resource\_group) | terraform-ibm-modules/resource-group/ibm | 1.6.1 |
@@ -41,14 +41,14 @@ This solution provisions the following resources:
 ### Resources
 
 | Name | Type |
-|------|------|
-| [ibm_cos_bucket_replication_rule.cos_replication_rule](https://registry.terraform.io/providers/ibm-cloud/ibm/2.6.2/docs/resources/cos_bucket_replication_rule) | resource |
-| [ibm_iam_authorization_policy.policy](https://registry.terraform.io/providers/ibm-cloud/ibm/2.6.2/docs/resources/iam_authorization_policy) | resource |
+| ---- | ---- |
+| [ibm_cos_bucket_replication_rule.cos_replication_rule](https://registry.terraform.io/providers/ibm-cloud/ibm/2.7.0/docs/resources/cos_bucket_replication_rule) | resource |
+| [ibm_iam_authorization_policy.policy](https://registry.terraform.io/providers/ibm-cloud/ibm/2.7.0/docs/resources/iam_authorization_policy) | resource |
 
 ### Inputs
 
 | Name | Description | Type | Default | Required |
-|------|-------------|------|---------|:--------:|
+| ---- | ----------- | ---- | ------- | :------: |
 | <a name="input_add_bucket_name_suffix"></a> [add\_bucket\_name\_suffix](#input\_add\_bucket\_name\_suffix) | Whether to append a randomly generated 4-character string to the Object Storage bucket names. Set to `false` for full control over the names in the `cos_source_bucket_name` and `cos_target_bucket_name` inputs. | `bool` | `true` | no |
 | <a name="input_cos_instance_name"></a> [cos\_instance\_name](#input\_cos\_instance\_name) | The name to use when creating the IBM Cloud Object Storage instance. If the `prefix` input is passed, it is added before this value, in the format `<prefix>-value`. | `string` | `"cos-instance"` | no |
 | <a name="input_cos_source_bucket_name"></a> [cos\_source\_bucket\_name](#input\_cos\_source\_bucket\_name) | The globally unique name to use for the source Cloud Object Storage bucket. If the `add_bucket_name_suffix` input is set to `true`, a random 4-character string is appended to this name to help ensure that the bucket name is globally unique. If the `prefix` input is passed, it is added before this value, in the format `<prefix>-value`. | `string` | `"source-bucket"` | no |
@@ -64,7 +64,7 @@ This solution provisions the following resources:
 ### Outputs
 
 | Name | Description |
-|------|-------------|
+| ---- | ----------- |
 | <a name="output_cos_instance_crn"></a> [cos\_instance\_crn](#output\_cos\_instance\_crn) | Object Storage instance CRN |
 | <a name="output_cos_instance_guid"></a> [cos\_instance\_guid](#output\_cos\_instance\_guid) | Object Storage instance guid |
 | <a name="output_cos_instance_id"></a> [cos\_instance\_id](#output\_cos\_instance\_id) | Object Storage instance id |
